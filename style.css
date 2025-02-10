@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* General Styles */
+body {
+    background-color: #282a36; /* Dracula background color */
+    color: #f8f8f2; /* Dracula text color */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    margin: 10px;
+    padding: 2%;
+    background-color: #44475a; /* Dracula dark background */
+    color: #f8f8f2; /* Light text for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+}
+
+.nav-icon, .site-title {
+    font-size: 1.5em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.site-title {
+    font-size: 1.5em; /* Emphasize title size */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Intro Section Styles */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: #44475a; /* Dracula dark background */
+    color: #f8f8f2; /* Light text for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+}
+
+/* Games Section Styles */
+.games {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    padding: 2%;
+}
+
+.games ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    padding: 0;
+    margin: 0;
+}
+
+.games li {
+    flex: 1 1 calc(33.333% - 30px); 
+    text-align: center;
+    margin: 0 15px; /* Space out items */
+    white-space: nowrap; /* Prevent items from wrapping */
+    margin-bottom: 50px;
+    background-color: #44475a; /* Dracula dark background for list items */
+    color: #f8f8f2; /* Light text for contrast */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each list item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+}
+
+.game-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures images fit within the given size */
+    margin-bottom: 10px; /* Space between image and text */
+    border-radius: 5px; /* Rounded corners for images */
+    border: 3px solid #50fa7b; /* Optional: Green border for images to match Dracula theme */
+}
+
+.games a {
+    text-decoration: none; /* Removes underline */
+    color: #f8f8f2; /* Light text color */
+}
+
+.games a:hover {
+    color: #ff79c6; /* Pink color on hover */
+}
+
+.navigation-menu {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    background-color: #44475a; /* Match Dracula theme */
+    color: #f8f8f2; /* Light text for contrast */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+    width: 200px; /* Adjust width as needed */
+}
+
+.navigation-menu ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-menu li {
+    margin-bottom: 10px; /* Space between menu items */
+}
+
+.navigation-menu a {
+    color: #f8f8f2; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link block-level to occupy the full width of the list item */
+    padding: 10px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navigation-menu a:hover {
+    background-color: #6272a4; /* Slightly lighter background on hover */
+    color: #ff79c6; /* Optional: Pink color on hover */
+}
